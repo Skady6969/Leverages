@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete responsive online portfolio website design</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+
+  
+/>
+
+
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="indexstyle1.css">
+     <link rel="stylesheet" href="indexstyle2.css">
+     <link rel="stylesheet" href="footer.css">
+     <link rel="stylesheet" href="header.css">
+
+</head>
+
+<style>
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: static;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    .btn {
+  
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
+
+        </style>
+    
+        <script>
+    
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+        </script>
+<body>
+
+
+    
+
+    <main>
+
+        <header id="header">
+            <nav>
+           <a href="#" class="logo1">
+             <img src="img/logo.png" />
+           </a>
+           <input class="menu-btn" type="checkbox" id="menu-btn" />
+           <label class="menu-icon" for="menu-btn">
+             <span class="nav-icon"></span>
+           </label>
+           <ul class="menu">
+             <li><a href="#">Home</a></li>
+             <li>
+               <a href="#">Services</a>
+             </li>
+             <li><a href="Protfolio 3.0.html"><span>PORTFOLIO</span></a></li>
+             <li><a href="LVS_Aboutus.html">About us</a></li>
+           </ul>
+         </nav>
+         <br><br><br><br>
+
+
+
+
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="images/Sam 1.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="images/Sam 2.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="images/Sam 3.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="images/Sam 4..jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="images/Sam 6.jpg" style="width:100%">
+            </div>
+          
+          
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/Sam 1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Sam 2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Sam 3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Sam 4..jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Sam 5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Sam 6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
+
+
+
+          <br><br><br><br>
+
+
+          <div class="more-folio">
+            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=
+            leverage.virtualservices@gmail.com&tf=1" class="btn btn-primary" style="color: black;">Avail Services</a>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <script src="isotope.pkgd.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="main1.js"></script>
+    
+</body>
+<section class="footer">
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" style="border-right: 2px solid white; display: grid; place-content: center;">
+
+          <div class="footer-text">
+            <img src="img/Artboard 95 copy 6.png" alt="" height="auto" width="85%">
+            <h4>"NO ONE GETS LEFT BEHIND"</h4>
+          </div>
+          <br>
+          <div class="footer-text">
+            <h5>Socials</h5>
+            <div class="footer-socials" style="display: flex; gap: 20px;">
+              <a href="">
+                <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M44 24C44 12.96 35.04 4 24 4C12.96 4 4 12.96 4 24C4 33.68 10.88 41.74 20 43.6V30H16V24H20V19C20 15.14 23.14 12 27 12H32V18H28C26.9 18 26 18.9 26 20V24H32V30H26V43.9C36.1 42.9 44 34.38 44 24Z" fill="white"/>
+                </svg>
+                  
+              </a>
+              <a href="">
+                <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 6C10.478 6 6 10.478 6 16V32C6 37.522 10.478 42 16 42H32C37.522 42 42 37.522 42 32V16C42 10.478 37.522 6 32 6H16ZM36 10C37.104 10 38 10.896 38 12C38 13.104 37.104 14 36 14C34.896 14 34 13.104 34 12C34 10.896 34.896 10 36 10ZM24 14C29.522 14 34 18.478 34 24C34 29.522 29.522 34 24 34C18.478 34 14 29.522 14 24C14 18.478 18.478 14 24 14ZM24 18C22.4087 18 20.8826 18.6321 19.7574 19.7574C18.6321 20.8826 18 22.4087 18 24C18 25.5913 18.6321 27.1174 19.7574 28.2426C20.8826 29.3679 22.4087 30 24 30C25.5913 30 27.1174 29.3679 28.2426 28.2426C29.3679 27.1174 30 25.5913 30 24C30 22.4087 29.3679 20.8826 28.2426 19.7574C27.1174 18.6321 25.5913 18 24 18Z" fill="white"/>
+                  </svg>
+                  
+                  
+              </a>
+              <a href="">
+                <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 4V8H19.0898C17.7138 8 17.0221 9.66272 17.9961 10.6367L22.9062 15.5469C23.5082 16.1489 24.4918 16.1489 25.0938 15.5469L30.0039 10.6367C30.9779 9.66272 30.2862 8 28.9102 8H26V4H22ZM8 8C5.79 8 4 9.79 4 12V36C4 38.21 5.79 40 8 40H40C42.21 40 44 38.21 44 36V12C44 9.79 42.21 8 40 8H36C35.47 8 34.9599 8.20994 34.5859 8.58594C33.3259 9.84594 34.218 12 36 12H40V16.0039L25.043 25.3477C24.405 25.7457 23.597 25.7457 22.957 25.3477L8 16.0039V12H12C13.782 12 14.6741 9.84594 13.4141 8.58594C13.0401 8.20994 12.53 8 12 8H8Z" fill="white"/>
+                  </svg>
+              </a>
+            </div>
+          </div>
+  
+        </div>
+        <div class="col" style=" display: grid; place-content: center;">
+          <div class="footer-text">
+            <h5>Discover</h5>
+  
+            <ul style="display: flex; gap: 50px; padding: 0;">
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </div>
+          <br>
+          <br>
+  
+          <div class="footer-text" >
+            <h6>Don’t Wait Any Longer. Contact Us!</h6>
+            <p>Email Us : leverage.virtualservices@gmail.com</p>
+            <p>For Applicants : careers.leveragevirtualservices@gmail.com</p>
+            <p>Call or Text Us : 63+088621472 | 63+178367049 </p>
+          </div>
+          
+        </div>
+  
+  
+      </div>
+      <br>
+      <br>
+
+      <div class="row" style="border-top: 2px solid white;">
+        <small style="text-align: center; margin-top: 50px; ">Copyright © 2022, Leverage Virtual Services. | All Rights Reserved. </small>
+      </div>
+    </div>
+  </footer>
+
+
+</section>
+
+</html>
