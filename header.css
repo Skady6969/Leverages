@@ -25,7 +25,7 @@ nav ul li a{
     margin: 0px;
     padding: 0px 10px;
     display: flex;
-    font-size: 1.25rem ;
+    font-size: 1rem ;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
@@ -43,6 +43,6 @@ nav ul li a:hover{
 .logo img{
     min-height: auto;
     width: 300px;
-    margin-left: 150px;
+    margin-left: 170px;
 }
 

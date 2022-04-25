@@ -108,15 +108,16 @@ a{
 
 .ads {
     padding-top: 12em;
-    padding-bottom: 12em;
+    padding-bottom: 3em;
 }
 
 .onboard {
     margin-top: 5rem;
-    min-height: 70vh;
+    min-height: 50vh;
     margin-bottom: 5rem;
     background-color: #F5F4F4;
     padding-top: 5rem;
+    position: relative;
 }
 
 .onboard .col{
@@ -137,6 +138,26 @@ a{
     padding-right: 1rem;
 }
 
+.custom-shape-divider-top-1649129848 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1649129848 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-top-1649129848 .shape-fill {
+    fill: #ffffff;
+}
+
 
 .adsheader {
     text-align: center;
@@ -147,7 +168,7 @@ a{
 .adsheader h1{
     position: relative;
     width: max-content;
-    margin-bottom: 80px;
+    padding: 1;
 }
 
 .adsheader h1::after{
@@ -189,7 +210,7 @@ a{
 
 .consult {
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    
     min-height: 5vh;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568) ), url("./images/desk-593327.jpg") ; */
     background-size: cover;
@@ -343,7 +364,7 @@ a{
 }
 
 .custom-shape-divider-top-1648393009 .shape-fill {
-    fill: #ffffff;
+    fill: #222;
 }
 
 
